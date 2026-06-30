@@ -1,0 +1,79 @@
+/* ============================================
+   RoadWorks Manager – Custom styles
+   ============================================ */
+
+/* Body & general */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar tweak */
+.navbar-brand {
+    letter-spacing: -0.5px;
+    font-size: 1.1rem;
+}
+
+/* Card hover lift effect */
+.card {
+    transition: box-shadow 0.15s ease;
+}
+
+/* Status badge sizing */
+.status-badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+/* Table row pointer */
+.table tbody tr {
+    cursor: pointer;
+}
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Alert type icons */
+.alert-icon-danger  { color: #dc3545; }
+.alert-icon-warning { color: #ffc107; }
+.alert-icon-success { color: #198754; }
+
+/* Dashboard stat cards */
+.col-6 .card,
+.col-md-3 .card {
+    border-radius: 12px;
+}
+
+/* Scrollable alert panel */
+.alert-scroll-panel {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Late sign badge pulse animation */
+@keyframes pulse-danger {
+    0%   { box-shadow: 0 0 0 0 rgba(220,53,69,.4); }
+    70%  { box-shadow: 0 0 0 8px rgba(220,53,69,0); }
+    100% { box-shadow: 0 0 0 0 rgba(220,53,69,0); }
+}
+
+.badge.bg-danger.pulse {
+    animation: pulse-danger 1.5s infinite;
+}
+
+/* Form label */
+.form-label {
+    font-size: 0.875rem;
+    color: #495057;
+}
+
+/* Login card */
+.card-header.bg-warning {
+    border-radius: 0 !important;
+}
+
+/* Footer */
+.card-footer {
+    background: #f8f9fa;
+    font-size: 0.8rem;
+}
